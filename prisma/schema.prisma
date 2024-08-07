@@ -14,15 +14,42 @@ model Category {
 }
 
 model Product {
-    id           Int    @id @default(autoincrement())
-    nome         String
-    descricao    String
-    categoryId   Int
-    imagem       String
-    preco        String
-    material     String
-    departamento String
-    name         String
+    id          Int     @id @default(autoincrement())
+    name        String
+    description String
+    categoryId  Int
+    image       String
+    price       Decimal @db.Decimal(10, 2) // Use Decimal para precisão decimal com duas casas decimais
+    material    String
+    departament String
 
-    category Category @relation(fields: [categoryId], references: [id])
+    category  Category    @relation(fields: [categoryId], references: [id])
+    OrderItem OrderItem[]
+}
+
+model Customer {
+    id     Int     @id @default(autoincrement())
+    name   String
+    email  String  @unique
+    phone  String?
+    orders Order[] // Relacionamento 1:N com Order
+}
+
+model Order {
+    id         Int         @id @default(autoincrement())
+    createdAt  DateTime    @default(now())
+    customer   Customer    @relation(fields: [customerId], references: [id])
+    customerId Int
+    items      OrderItem[]
+    total      Decimal     @db.Decimal(10, 2)
+}
+
+model OrderItem {
+    id        Int     @id @default(autoincrement())
+    quantity  Int
+    price     Decimal @db.Decimal(10, 2)
+    order     Order   @relation(fields: [orderId], references: [id])
+    orderId   Int
+    product   Product @relation(fields: [productId], references: [id])
+    productId Int
 }
