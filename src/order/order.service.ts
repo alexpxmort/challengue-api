@@ -41,11 +41,11 @@ export class OrdersService {
           data: {
             ...(categoryId && { category: { connect: { id: categoryId } } }),
             image: item.image,
-            material: item.material,
+            material: item.material ?? '',
             description: item.description || '',
             name: item.name,
             price: item.price,
-            departament: item.department,
+            departament: item.department ?? '',
           },
         });
         productId = newProduct.id;

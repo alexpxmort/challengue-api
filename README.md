@@ -60,6 +60,24 @@ Para começar a trabalhar com este projeto, siga os passos abaixo:
    yarn install ou npm install
    ```
 
+## Configuração do Banco de Dados
+
+Certifique-se de que você tem um banco de dados MySQL configurado. Você pode criar o banco de dados necessário usando o seguinte comando:
+
+```sql
+CREATE DATABASE api;
+```
+
+## Migrações do Prisma
+
+Depois de instalar as dependências e configurar o banco de dados, execute as migrações do Prisma:
+
+```bash
+npx prisma migrate dev
+```
+
+Isso aplicará todas as migrações pendentes ao banco de dados MySQL.
+
 ## Executando a Aplicação
 
 Você pode executar a aplicação em diferentes modos:
@@ -87,6 +105,8 @@ Você pode executar a aplicação em diferentes modos:
   ```bash
   yarn start ou npm start
   ```
+
+Após isso o servidor estará disponível em `http://localhost:3000`.
 
 ## Testes
 
