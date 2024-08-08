@@ -17,13 +17,13 @@ model Product {
     id          Int     @id @default(autoincrement())
     name        String
     description String
-    categoryId  Int
+    categoryId  Int?
     image       String
     price       Decimal @db.Decimal(10, 2)
     material    String?
     departament String
 
-    category  Category    @relation(fields: [categoryId], references: [id])
+    category  Category?   @relation(fields: [categoryId], references: [id])
     OrderItem OrderItem[]
 }
 
