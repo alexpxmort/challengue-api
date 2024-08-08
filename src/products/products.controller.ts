@@ -11,7 +11,10 @@ export class ProductsController {
 
   @Get('/')
   @ApiOperation({ summary: 'retrieve all products' })
-  @ApiResponse({ status: HttpStatus.OK, description: 'sucess' })
+  @ApiResponse({
+    status: HttpStatus.OK,
+    description: 'sucess retrieve all products',
+  })
   findAll(): Observable<Product[]> {
     return this.productsService.findAll();
   }
