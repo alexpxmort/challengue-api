@@ -48,8 +48,8 @@ Para começar a trabalhar com este projeto, siga os passos abaixo:
 1. **Clone o Repositório:**
 
    ```bash
-   git clone https://github.com/seu-repositorio/seu-projeto.git
-   cd seu-projeto
+   https://github.com/alexpxmort/challengue-api.git
+   cd challengue-api
    ```
 
 2. **Instale as Dependências:**
