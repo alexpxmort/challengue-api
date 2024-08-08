@@ -60,6 +60,10 @@ Para começar a trabalhar com este projeto, siga os passos abaixo:
    yarn install ou npm install
    ```
 
+## Docs
+
+A documentação da Api esta no Swagger [Link](http://localhost:3000/api-docs)
+
 ## Configuração do Banco de Dados
 
 Certifique-se de que você tem um banco de dados MySQL configurado. Você pode criar o banco de dados necessário usando o seguinte comando:
