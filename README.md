@@ -57,7 +57,7 @@ Para começar a trabalhar com este projeto, siga os passos abaixo:
    Certifique-se de que você tenha o [Node.js](https://nodejs.org) instalado. Em seguida, execute o comando abaixo para instalar as dependências do projeto:
 
    ```bash
-   yarn install
+   yarn install ou npm install
    ```
 
 ## Executando a Aplicação
@@ -69,7 +69,7 @@ Você pode executar a aplicação em diferentes modos:
   Este modo fornece recarregamento automático e é útil durante o desenvolvimento.
 
   ```bash
-  yarn start:dev
+  yarn start:dev ou npm run start:dev
   ```
 
 - **Modo de Produção:**
@@ -77,7 +77,7 @@ Você pode executar a aplicação em diferentes modos:
   Este modo é otimizado para ambientes de produção.
 
   ```bash
-  yarn start:prod
+  yarn start:prod ou npm run start:prod
   ```
 
 - **Modo Padrão:**
@@ -85,7 +85,7 @@ Você pode executar a aplicação em diferentes modos:
   Este modo executa a aplicação sem recarregamento automático.
 
   ```bash
-  yarn start
+  yarn start ou npm start
   ```
 
 ## Testes
@@ -95,19 +95,19 @@ Execute os seguintes comandos para realizar diferentes tipos de testes:
 - **Testes Unitários:**
 
   ```bash
-  yarn test
+  yarn test ou npm run test
   ```
 
 - **Testes de Integração (E2E):**
 
   ```bash
-  yarn test:e2e
+  yarn test:e2e ou npm run test:e2e
   ```
 
 - **Cobertura de Testes:**
 
   ```bash
-  yarn test:cov
+  yarn test:cov ou npm run test:cov
   ```
 
 ## Suporte
