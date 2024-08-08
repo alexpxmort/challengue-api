@@ -27,7 +27,7 @@ export class OrdersService {
         })
       )?.id;
 
-      if (!categoryId) {
+      if (!categoryId && item.category) {
         const newCategory = await this.prisma.category.create({
           data: { name: item.category },
         });
@@ -39,7 +39,7 @@ export class OrdersService {
       if (!productId) {
         const newProduct = await this.prisma.product.create({
           data: {
-            category: { connect: { id: categoryId } },
+            ...(categoryId && { category: { connect: { id: categoryId } } }),
             image: item.image,
             material: item.material,
             description: item.description || '',

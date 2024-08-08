@@ -19,8 +19,8 @@ model Product {
     description String
     categoryId  Int
     image       String
-    price       Decimal @db.Decimal(10, 2) // Use Decimal para precisão decimal com duas casas decimais
-    material    String
+    price       Decimal @db.Decimal(10, 2)
+    material    String?
     departament String
 
     category  Category    @relation(fields: [categoryId], references: [id])
@@ -32,7 +32,7 @@ model Customer {
     name   String
     email  String  @unique
     phone  String?
-    orders Order[] // Relacionamento 1:N com Order
+    orders Order[]
 }
 
 model Order {

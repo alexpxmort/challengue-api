@@ -1,22 +1,18 @@
-import { Controller, Get, Param } from '@nestjs/common';
+import { Controller, Get, HttpStatus } from '@nestjs/common';
 import { ProductsService } from './products.service';
-import { Product } from './product.interface'; // Importe o tipo Product
+import { Product } from './product.interface';
 import { Observable } from 'rxjs';
+import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 
+@ApiTags('products')
 @Controller('products')
 export class ProductsController {
   constructor(private readonly productsService: ProductsService) {}
 
-  @Get(':providerName')
-  findAll(@Param('providerName') providerName: string): Observable<Product[]> {
-    return this.productsService.findAll(providerName);
-  }
-
-  @Get(':providerName/:id')
-  findById(
-    @Param('providerName') providerName: string,
-    @Param('id') id: number,
-  ): Observable<Product> {
-    return this.productsService.findById(providerName, id);
+  @Get('/')
+  @ApiOperation({ summary: 'retrieve all products' })
+  @ApiResponse({ status: HttpStatus.OK, description: 'sucess' })
+  findAll(): Observable<Product[]> {
+    return this.productsService.findAll();
   }
 }

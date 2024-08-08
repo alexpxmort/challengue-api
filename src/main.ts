@@ -5,12 +5,10 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  // Configuração do Swagger
   const config = new DocumentBuilder()
-    .setTitle('API Example')
-    .setDescription('A descrição da API')
+    .setTitle('Shopex API')
+    .setDescription('Shopex Api to handle operations used by front end')
     .setVersion('1.0')
-    .addTag('test')
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
