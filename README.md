@@ -72,6 +72,19 @@ Certifique-se de que você tem um banco de dados MySQL configurado. Você pode c
 CREATE DATABASE api;
 ```
 
+crie um arquivo .env com a configuração do seu database
+
+e coloque como mostrado abaixo
+
+```bash
+DATABASE_URL="mysql://seu-user:sua-senha@127.0.0.1:3306/api"
+```
+
+certifique de trocar seu-user pelo seu usupario no mysql e onde esta sua-senha
+pela sua senha
+
+pode se basear no .env.example
+
 ## Migrações do Prisma
 
 Depois de instalar as dependências e configurar o banco de dados, execute as migrações do Prisma:
