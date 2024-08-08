@@ -54,6 +54,15 @@ export class OrderItem {
   category?: string;
 
   @ApiProperty({
+    description: 'Description of the item',
+    example: '',
+    required: false,
+  })
+  @IsString()
+  @IsOptional()
+  description?: string;
+
+  @ApiProperty({
     description: 'Material of the item',
     example: 'Metal',
     required: false,
