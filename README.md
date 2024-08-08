@@ -80,7 +80,7 @@ e coloque como mostrado abaixo
 DATABASE_URL="mysql://seu-user:sua-senha@127.0.0.1:3306/api"
 ```
 
-certifique de trocar seu-user pelo seu usupario no mysql e onde esta sua-senha
+certifique de trocar seu-user pelo seu usuário no mysql e onde esta sua-senha
 pela sua senha
 
 pode se basear no .env.example
