@@ -45,7 +45,7 @@ describe('ProductsService', () => {
     expect(service).toBeDefined();
   });
 
-  it('should call GET and return a list of products', async () => {
+  it('should call HttpService.get() and return a list of products', async () => {
     const result = await service.findAll().toPromise();
 
     expect(result).toHaveLength(2);

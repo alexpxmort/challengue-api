@@ -1,73 +1,123 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  <a href="http://nestjs.com/" target="_blank">
+    <img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Logo do Nest" />
+  </a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+<p align="center">
+  <a href="https://circleci.com/gh/nestjs/nest" target="_blank">
+    <img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" />
+  </a>
+  <a href="https://www.npmjs.com/package/@nestjs/core" target="_blank">
+    <img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="Versão NPM" />
+  </a>
+  <a href="https://www.npmjs.com/package/@nestjs/core" target="_blank">
+    <img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Licença do Pacote" />
+  </a>
+  <a href="https://www.npmjs.com/package/@nestjs/common" target="_blank">
+    <img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="Downloads NPM" />
+  </a>
+  <a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank">
+    <img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master" alt="Cobertura de Testes" />
+  </a>
+  <a href="https://discord.gg/G7Qnnhy" target="_blank">
+    <img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord" />
+  </a>
+  <a href="https://opencollective.com/nest#backer" target="_blank">
+    <img src="https://opencollective.com/nest/backers/badge.svg" alt="Apoiadores no Open Collective" />
+  </a>
+  <a href="https://opencollective.com/nest#sponsor" target="_blank">
+    <img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Patrocinadores no Open Collective" />
+  </a>
+  <a href="https://paypal.me/kamilmysliwiec" target="_blank">
+    <img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Doe via PayPal" />
+  </a>
+  <a href="https://twitter.com/nestframework" target="_blank">
+    <img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Seguir" alt="Seguir no Twitter" />
+  </a>
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## Descrição
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Este é um repositório inicial para o [NestJS](https://github.com/nestjs/nest), um framework progressivo para Node.js que facilita a construção de aplicações escaláveis e eficientes no lado do servidor utilizando TypeScript.
 
-## Installation
+## Instalação
 
-```bash
-$ yarn install
-```
+Para começar a trabalhar com este projeto, siga os passos abaixo:
 
-## Running the app
+1. **Clone o Repositório:**
 
-```bash
-# development
-$ yarn run start
+   ```bash
+   git clone https://github.com/seu-repositorio/seu-projeto.git
+   cd seu-projeto
+   ```
 
-# watch mode
-$ yarn run start:dev
+2. **Instale as Dependências:**
 
-# production mode
-$ yarn run start:prod
-```
+   Certifique-se de que você tenha o [Node.js](https://nodejs.org) instalado. Em seguida, execute o comando abaixo para instalar as dependências do projeto:
 
-## Test
+   ```bash
+   yarn install
+   ```
 
-```bash
-# unit tests
-$ yarn run test
+## Executando a Aplicação
 
-# e2e tests
-$ yarn run test:e2e
+Você pode executar a aplicação em diferentes modos:
 
-# test coverage
-$ yarn run test:cov
-```
+- **Modo de Desenvolvimento:**
 
-## Support
+  Este modo fornece recarregamento automático e é útil durante o desenvolvimento.
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+  ```bash
+  yarn start:dev
+  ```
 
-## Stay in touch
+- **Modo de Produção:**
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+  Este modo é otimizado para ambientes de produção.
 
-## License
+  ```bash
+  yarn start:prod
+  ```
 
-Nest is [MIT licensed](LICENSE).
+- **Modo Padrão:**
+
+  Este modo executa a aplicação sem recarregamento automático.
+
+  ```bash
+  yarn start
+  ```
+
+## Testes
+
+Execute os seguintes comandos para realizar diferentes tipos de testes:
+
+- **Testes Unitários:**
+
+  ```bash
+  yarn test
+  ```
+
+- **Testes de Integração (E2E):**
+
+  ```bash
+  yarn test:e2e
+  ```
+
+- **Cobertura de Testes:**
+
+  ```bash
+  yarn test:cov
+  ```
+
+## Suporte
+
+O NestJS é um projeto de código aberto licenciado sob a licença MIT. Ele cresce graças ao apoio da comunidade e dos patrocinadores. Para apoiar o projeto, considere se tornar um [apoiador](https://opencollective.com/nest#backer) ou um [patrocinador](https://opencollective.com/nest#sponsor).
+
+## Mantenha-se em Contato
+
+- **Autor:** [Alex Pereira de Oliveira](https://www.linkedin.com/in/alex-pereira-de-oliveira-628245160/)
+
+## Licença
+
+O NestJS é licenciado sob a licença [MIT](LICENSE).
